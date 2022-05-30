@@ -1,0 +1,263 @@
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #c8c8d9;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #c8c8d9;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #c8c8d9;
+}
+
+body {
+  padding: 4rem;
+  background-color: #f6f8fc;
+  color: #111c63;
+  font-family: sans-serif;
+  font-weight: 300;
+}
+
+input[type='text'] {
+  padding: 2rem;
+  width: 100%;
+  background-color: white;
+  border-radius: 1rem;
+  border: none;
+  outline: none;
+  transition: box-shadow 0.2s ease-out;
+  color: #111c63;
+  font-family: sans-serif;
+  font-weight: 300;
+}
+
+input[type='text']:focus,
+input[type='text']:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+.with-input-adornment {
+  position: relative;
+}
+.with-input-adornment .input-adornment {
+  position: absolute;
+  left: 2rem;
+  top: 50%;
+  color: #5c5dff;
+  font-size: 2rem;
+  margin-top: -1rem;
+}
+.with-input-adornment input {
+  padding-left: 6rem;
+  position: relative;
+}
+
+a {
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  border-radius: 1rem;
+  color: rgb(92, 93, 255);
+}
+a:hover {
+  background-color: rgb(92, 93, 255);
+  color: white;
+  transition: all 0.2s ease-out;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+main {
+  padding-top: 5rem;
+}
+section {
+  margin-bottom: 5rem;
+}
+.align-right {
+  text-align: right;
+}
+
+.folders {
+  height: 15rem;
+}
+.card {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  height: 16rem;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  width: 100%;
+
+  background: white;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+.card .title {
+  font-size: 1.3em;
+  line-height: 1.5;
+}
+.card > .storage {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.card > .storage > .total {
+  margin-left: auto;
+}
+.card > .storage > .meter {
+  height: 0.5em;
+  width: 100%;
+  margin-top: 1rem;
+  position: relative;
+
+  background-color: #eff3fc;
+  border-radius: 1rem;
+}
+.card > .storage > .meter > span {
+  display: block;
+  height: 100%;
+  position: relative;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  background-color: #578eff;
+  overflow: hidden;
+  transition: background-color 0.2s ease-out;
+}
+
+.card:hover {
+  margin-top: -2rem;
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+  height: 20rem;
+  font-size: 1.8rem;
+  width: calc(100% + 3rem);
+
+  background: rgb(92, 93, 255);
+  /* background: radial-gradient(circle, rgba(92, 93, 255, 1) 50%, rgba(125, 129, 234, 1) 100%); */
+  color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+.card:hover > .storage > .meter > span {
+  background-color: #ffba0e;
+}
+
+.icon-folder {
+  font-size: 2em;
+  color: #5c5dff;
+  transition: color 0.2s ease-out;
+}
+
+.card:hover .icon-folder {
+  color: white;
+}
+
+.card .icon {
+  height: 3em;
+  width: 3em;
+  background-color: #f6f8fc;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+}
+.card .icon img {
+  width: 100%;
+}
+
+section > header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section > header > .title {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.card.sm {
+  height: 12rem;
+}
+
+.card.sm:hover {
+  height: 14rem;
+}
+
+table {
+  margin-left: -1rem;
+  width: calc(100% + 1rem);
+  border-collapse: collapse;
+}
+th:first-child,
+tr td:first-child {
+  padding-left: 1rem;
+}
+th:last-child,
+tr td:last-child {
+  padding-right: 1rem;
+}
+tr {
+  cursor: pointer;
+}
+tr:hover td {
+  background: white;
+}
+tr td:first-child {
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+tr td:last-child {
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+th,
+td {
+  padding: 1.5rem 0;
+  text-align: left;
+  transition: background-color 0.2s ease-out;
+  /* background: pink; */
+}
+td.no-padding {
+  padding: 0;
+}
+th {
+  font-weight: 500;
+}
+
+.file-icon {
+  width: 3rem;
+  height: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  color: white;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.file-icon.pdf {
+  background-color: #ff5b57;
+}
+.file-icon.pdf:after {
+  content: 'PDF';
+}
+
+.file-icon.doc {
+  background-color: #5892ff;
+}
+.file-icon.doc:after {
+  content: 'DOC';
+}
+
+.file-icon.zip {
+  background-color: #ffc000;
+}
+.file-icon.zip:after {
+  content: 'ZIP';
+}

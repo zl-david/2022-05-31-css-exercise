@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Exercise</title>
+    <meta charset="utf-8" />
+    <script src="https://kit.fontawesome.com/992f3bd898.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/vendor/normalize.css" />
+    <link rel="stylesheet" href="./styles/vendor/reset.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="with-input-adornment">
+          <input type="text" placeholder="Search the files" />
+          <i class="input-adornment fas fa-search"></i>
+        </div>
+      </header>
+      <main>
+        <section>
+          <div class="card" style="width: 340px">
+            <div>
+              <div class="icon">
+                <img src="images/googledrive.png" />
+              </div>
+              <div class="menu"></div>
+            </div>
+            <h3 class="title">Google Drive</h3>
+            <div class="storage">
+              <span class="used">34.5 GB</span>
+              <span class="total">50 GB</span>
+              <div class="meter">
+                <span style="width: 69%"></span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="recent-files">
+          <header>
+            <h2 class="title">Recent Files</h2>
+            <a href="#">View all</a>
+          </header>
+          <table>
+            <thead>
+              <tr>
+                <th colspan="2">Name</th>
+                <th>Members</th>
+                <th class="align-right">Last modified</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="no-padding" width="50"><div class="file-icon pdf"></div></td>
+                <td>File 1</td>
+                <td>Only you</td>
+                <td class="align-right">Sep 3, 2019</td>
+              </tr>
+              <tr>
+                <td class="no-padding"><div class="file-icon doc"></div></td>
+                <td>Another file</td>
+                <td>3 members</td>
+                <td class="align-right">Aug 28, 2019</td>
+              </tr>
+              <tr>
+                <td class="no-padding"><div class="file-icon zip"></div></td>
+                <td>Some file</td>
+                <td>10 members</td>
+                <td class="align-right">Okt 15, 2019</td>
+              </tr>
+              <tr>
+                <td class="no-padding"><div class="file-icon doc"></div></td>
+                <td>A word document</td>
+                <td>Only you</td>
+                <td class="align-right">Aug 28, 2019</td>
+              </tr>
+              <tr>
+                <td class="no-padding"><div class="file-icon zip"></div></td>
+                <td>Another zip file</td>
+                <td>10 members</td>
+                <td class="align-right">Okt 15, 2019</td>
+              </tr>
+              <tr>
+                <td class="no-padding" width="50"><div class="file-icon pdf"></div></td>
+                <td>File 2</td>
+                <td>Only you</td>
+                <td class="align-right">Sep 3, 2019</td>
+              </tr>
+              <tr>
+                <td class="no-padding" width="50"><div class="file-icon pdf"></div></td>
+                <td>File 3</td>
+                <td>4 members</td>
+                <td class="align-right">Sep 3, 2019</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
