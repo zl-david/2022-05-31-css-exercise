@@ -20,7 +20,10 @@ Open your browser at http://localhost:1234
 
 1. Add a Dropbox and iCloud card next to Google Drive. Use flexbox.
 
-2. Create a section above "Recent Files", named "Folders", with 4 cards.
+2. Create a section above "Recent Files", named "Folders", with 4 cards. You can use FontAwesome icons:
+```html
+<i class="fas fa-folder"></i>
+```
 
 ### CSS - Part 2
 
