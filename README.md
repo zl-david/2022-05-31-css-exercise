@@ -29,3 +29,9 @@ Open your browser at http://localhost:1234
 4. Make CSS more DRY and bundled. Use SCSS. Create a main.scss file in src/styles and add a link to HTML head to ./styles/main.css. Start SASS watcher with `yarn sass` or `npm run sass`
 
 ![result](result.png)
+
+## Help
+
+- https://github.com/AakashRao-dev/CSS-Cheatsheets
+- https://caniuse.com/
+- https://developer.mozilla.org/en-US/docs/Learn/CSS
