@@ -35,3 +35,9 @@ Open your browser at http://localhost:1234
 - https://github.com/AakashRao-dev/CSS-Cheatsheets
 - https://caniuse.com/
 - https://developer.mozilla.org/en-US/docs/Learn/CSS
+
+## Tools
+
+- FlexBox tool: https://codepen.io/justd/full/yydezN/
+- Shadow palette generator: https://www.joshwcomeau.com/shadow-palette/
+- CSS gradient: https://cssgradient.io/
