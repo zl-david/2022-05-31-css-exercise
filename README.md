@@ -25,11 +25,19 @@ Open your browser at http://localhost:1234
 <i class="fas fa-folder"></i>
 ```
 
+3. Use breakpoints to make the page responsive, example:
+
+```css
+@media only screen and (max-device-width: 667px) {
+
+}
+```
+
 ### CSS - Part 2
 
-3. Clean up the CSS. Use [BEM and SMACSS](./CleanCSS.md).
+4. Clean up the CSS. Use [BEM and SMACSS](./CleanCSS.md).
 
-4. Make CSS more DRY and bundled. Use [SCSS](https://sass-lang.com/guide). Create a main.scss file in src/styles and add a link to HTML head to ./styles/main.css. Start SASS watcher with `yarn sass` or `npm run sass`
+5. Make CSS more DRY and bundled. Use [SCSS](https://sass-lang.com/guide). Create a main.scss file in src/styles and add a link to HTML head to ./styles/main.css. Start SASS watcher with `yarn sass` or `npm run sass`
 
 ![result](result.png)
 
