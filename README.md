@@ -1,3 +1,11 @@
+## Setup
+
+Several options: 
+
+- Clone this repository
+- Download ZIP folder of this repository
+- Edit in the browser in codesandbox: https://codesandbox.io/s/css-exercise-dix9gb
+
 ## Building and running on localhost
 
 First install dependencies:
